@@ -9,6 +9,7 @@ use GuzzleHttp\Client as GuzzleCLient;
 /**
  * Nijha Online Api Client.
  */
+#[\AllowDynamicProperties]
 class Client
 {
     /**

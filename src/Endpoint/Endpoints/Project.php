@@ -10,6 +10,8 @@ use Onetoweb\NijhaOnline\Endpoint\AbstractEndpoint;
 class Project extends AbstractEndpoint
 {
     /**
+     * @param int $clientId
+     * 
      * @return array|null
      */
     public function listByClientId(int $clientId): ?array

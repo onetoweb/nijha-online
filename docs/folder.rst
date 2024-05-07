@@ -11,7 +11,7 @@ Folder
     :local:
 
 
-List Folders
+List folders
 ````````````
 
 .. code-block:: php
@@ -19,7 +19,16 @@ List Folders
     $result = $client->folder->list();
 
 
-Create Folder
+List folders by project id
+``````````````````````````
+
+.. code-block:: php
+    
+    $projectId = 42;
+    $result = $client->folder->listByProjectId($projectId);
+
+
+Create folder
 `````````````
 
 .. code-block:: php

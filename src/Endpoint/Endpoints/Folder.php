@@ -19,6 +19,16 @@ class Folder extends AbstractEndpoint
     
     /**
      * @param int $projectId
+     * 
+     * @return array|null
+     */
+    public function listByProjectId(int $projectId): ?array
+    {
+        return $this->client->get("/folder/$projectId");
+    }
+    
+    /**
+     * @param int $projectId
      * @param string $folderName
      * 
      * @return array|null

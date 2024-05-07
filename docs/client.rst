@@ -11,7 +11,7 @@ Client
     :local:
 
 
-List Clients
+List clients
 ````````````
 
 .. code-block:: php

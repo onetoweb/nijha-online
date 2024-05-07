@@ -15,3 +15,7 @@ Added client endpoint
 ## [1.0.3] - 2024-05-07
 
 Added project endpoint
+
+## [1.0.4] - 2024-05-07
+
+Added listByProjectId method to folder endpoint

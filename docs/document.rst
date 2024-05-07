@@ -11,7 +11,7 @@ Document
     :local:
 
 
-Create Document
+Create document
 ```````````````
 
 .. code-block:: php

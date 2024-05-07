@@ -11,6 +11,16 @@ class Document extends AbstractEndpoint
 {
     /**
      * @param int $folderId
+     * 
+     * @return array|null
+     */
+    public function list(int $folderId): ?array
+    {
+        return $this->client->get("/document/$folderId");
+    }
+    
+    /**
+     * @param int $folderId
      * @param string $filename
      * 
      * @return array|null

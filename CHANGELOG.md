@@ -19,3 +19,7 @@ Added project endpoint
 ## [1.0.4] - 2024-05-07
 
 Added listByProjectId method to folder endpoint
+
+## [1.0.5] - 2024-05-07
+
+Added list method to document endpoint

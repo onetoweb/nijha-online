@@ -10,6 +10,14 @@ Document
 .. contents::
     :local:
 
+List documents
+``````````````
+
+.. code-block:: php
+    
+    $folderId = 42;
+    $result = $client->document->list($folderId);
+
 
 Create document
 ```````````````

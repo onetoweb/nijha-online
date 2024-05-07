@@ -23,5 +23,6 @@ Setup
 Examples
 ========
 
+* `Client <client.rst>`_
 * `Folder <folder.rst>`_
 * `Document <document.rst>`_

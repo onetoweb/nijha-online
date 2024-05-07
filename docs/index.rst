@@ -24,5 +24,6 @@ Examples
 ========
 
 * `Client <client.rst>`_
+* `Project <project.rst>`_
 * `Folder <folder.rst>`_
 * `Document <document.rst>`_

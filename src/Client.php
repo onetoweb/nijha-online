@@ -15,6 +15,7 @@ class Client
      * Base Url.
      */
     public const BASE_URL = 'https://www.nijha-online.nl/api';
+    public const BASE_URL_TEST = 'https://nijha.nujob.nl/api';
     
     /**
      * Methods.
@@ -28,11 +29,17 @@ class Client
     private $apiKey;
     
     /**
+     * @var string
+     */
+    private $testModus;
+    
+    /**
      * @param string $apiKey
      */
-    public function __construct(string $apiKey)
+    public function __construct(string $apiKey, bool $testModus = false)
     {
         $this->apiKey = $apiKey;
+        $this->testModus = $testModus;
         
         // load endpoints
         $this->loadEndpoints();
@@ -45,6 +52,18 @@ class Client
     {
         foreach (Endpoints::list() as $name => $class) {
             $this->{$name} = new $class($this);
+        }
+    }
+    
+    /**
+     * @return string
+     */
+    public function getBaseUrl(): string
+    {
+        if ($this->testModus) {
+            return self::BASE_URL_TEST;
+        } else {
+            return self::BASE_URL;
         }
     }
     
@@ -91,7 +110,7 @@ class Client
             RequestOptions::JSON => $data,
         ];
         
-        $response = (new GuzzleCLient())->request($method, self::BASE_URL . $endpoint, $options);
+        $response = (new GuzzleCLient())->request($method, $this->getBaseUrl() . $endpoint, $options);
         
         $contents = $response->getBody()->getContents();
         

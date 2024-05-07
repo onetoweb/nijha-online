@@ -1,0 +1,30 @@
+{
+    "name": "onetoweb/nijha-online",
+    "description": "Nijha Online API Client",
+    "keywords": [
+        "api",
+        "php",
+        "nijha-online"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/onetoweb/nijha-online",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan van 't Ende",
+            "email": "jvantende@onetoweb.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle" : "^6.0 || ^7.0"
+    },
+    "require-dev": {
+        "symfony/error-handler": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Onetoweb\\NijhaOnline\\": "src/"
+        }
+    }
+}

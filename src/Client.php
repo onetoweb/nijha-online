@@ -22,6 +22,7 @@ class Client
      */
     public const METHOD_GET = 'GET';
     public const METHOD_POST = 'POST';
+    public const METHOD_DELETE = 'DELETE';
     
     /**
      * @var string
@@ -87,6 +88,16 @@ class Client
     public function post(string $endpoint, array $data = []): ?array
     {
         return $this->request(self::METHOD_POST, $endpoint, $data);
+    }
+    
+    /**
+     * @param string $endpoint
+     * 
+     * @return array|null
+     */
+    public function delete(string $endpoint): ?array
+    {
+        return $this->request(self::METHOD_DELETE, $endpoint);
     }
     
     /**

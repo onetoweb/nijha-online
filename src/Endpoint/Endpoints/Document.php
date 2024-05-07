@@ -33,4 +33,14 @@ class Document extends AbstractEndpoint
             'content' => base64_encode(file_get_contents($filename))
         ]);
     }
+    
+    /**
+     * @param int $documentId
+     * 
+     * @return array|null
+     */
+    public function delete(int $documentId): ?array
+    {
+        return $this->client->delete("/document/$documentId");
+    }
 }

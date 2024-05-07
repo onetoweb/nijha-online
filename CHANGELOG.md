@@ -23,3 +23,7 @@ Added listByProjectId method to folder endpoint
 ## [1.0.5] - 2024-05-07
 
 Added list method to document endpoint
+
+## [1.0.6] - 2024-05-07
+
+Added delete method to document endpoint

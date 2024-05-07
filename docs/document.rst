@@ -29,4 +29,13 @@ Create document
     $result = $client->document->create($folderId, $filename);
 
 
+Delete document
+```````````````
+
+.. code-block:: php
+    
+    $documentId = 42;
+    $result = $client->document->delete($documentId);
+
+
 `Back to top <#top>`_

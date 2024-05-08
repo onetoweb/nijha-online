@@ -13,7 +13,7 @@ Setup
     use Onetoweb\NijhaOnline\Client;
     
     // param
-    $apiKey = 'api_key';
+    $apiKey = '{api_key}';
     
     // setup client
     $client = new Client($apiKey);

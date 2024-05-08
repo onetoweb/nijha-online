@@ -31,3 +31,7 @@ Added delete method to document endpoint
 ## [1.0.7] - 2024-05-07
 
 Allow dynamic properties in client
+
+## [1.0.8] - 2024-05-08
+
+Added create to project endpoint

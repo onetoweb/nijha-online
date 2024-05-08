@@ -20,4 +20,19 @@ List projects by client id
     $result = $client->project->listByClientId($clientId);
 
 
+Create project
+``````````````
+
+.. code-block:: php
+    
+    $clientId = 42;
+    $name = 42;
+    
+    // optional
+    $number = 42;
+    $expires = (new DateTime())->modify('+30 days');
+    
+    $result = $client->project->create($clientId, $number, $name, $expires);
+
+
 `Back to top <#top>`_

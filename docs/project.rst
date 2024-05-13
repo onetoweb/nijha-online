@@ -35,4 +35,13 @@ Create project
     $result = $client->project->create($clientId, $number, $name, $expires);
 
 
+Delete project
+``````````````
+
+.. code-block:: php
+    
+    $projectId = 42;
+    $result = $client->project->delete($projectId);
+
+
 `Back to top <#top>`_

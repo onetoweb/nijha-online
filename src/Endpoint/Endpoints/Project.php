@@ -37,4 +37,14 @@ class Project extends AbstractEndpoint
             'expires' => $expires !== null ? $expires->format(DateTime::ATOM) : null,
         ]);
     }
+    
+    /**
+     * @param int $projectId
+     * 
+     * @return array|null
+     */
+    public function delete(int $projectId): ?array
+    {
+        return $this->client->delete("/project/$projectId");
+    }
 }

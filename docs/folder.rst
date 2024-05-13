@@ -38,4 +38,13 @@ Create folder
     $result = $client->folder->create($projectId, $folderName);
 
 
+Delete folder
+`````````````
+
+.. code-block:: php
+    
+    $folderId = 42;
+    $result = $client->folder->delete($folderId);
+
+
 `Back to top <#top>`_

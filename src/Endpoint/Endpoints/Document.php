@@ -27,7 +27,7 @@ class Document extends AbstractEndpoint
      */
     public function create(int $folderId, string $filename): ?array
     {
-        return $this->client->post('/document/create', [
+        return $this->client->post('/document', [
             'folder_id' => $folderId,
             'filename' => basename($filename),
             'content' => base64_encode(file_get_contents($filename))

@@ -44,3 +44,8 @@
 
  - Added delete to client endpoint
  - Added create to client endpoint
+
+## [1.0.11] - 2024-05-13
+
+ - Added delete to folder endpoint
+ 

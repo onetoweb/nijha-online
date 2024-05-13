@@ -35,9 +35,19 @@ class Folder extends AbstractEndpoint
      */
     public function create(int $projectId, string $folderName): ?array
     {
-        return $this->client->post('/folder/create', [
+        return $this->client->post('/folder', [
             'project_id' => $projectId,
             'folder_name' => $folderName
         ]);
+    }
+    
+    /**
+     * @param int $folderId
+     * 
+     * @return array|null
+     */
+    public function delete(int $folderId): ?array
+    {
+        return $this->client->delete("/folder/$folderId");
     }
 }

@@ -19,4 +19,22 @@ List clients
     $result = $client->client->list();
 
 
+Create client
+`````````````
+
+.. code-block:: php
+    
+    $clientName = 'client name';
+    $result = $client->client->create($clientName);
+
+
+Delete client
+`````````````
+
+.. code-block:: php
+    
+    $clientId = 42;
+    $result = $client->client->delete(clientId);
+
+
 `Back to top <#top>`_

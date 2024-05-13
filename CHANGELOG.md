@@ -36,6 +36,11 @@ Allow dynamic properties in client
 
 Added create to project endpoint
 
-## [1.0.9] - 2024-05-08
+## [1.0.9] - 2024-05-13
 
 Added delete to project endpoint
+
+## [1.0.10] - 2024-05-13
+
+Added delete to client endpoint
+Added create to client endpoint

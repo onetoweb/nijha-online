@@ -38,4 +38,18 @@ Delete document
     $result = $client->document->delete($documentId);
 
 
+Get document
+````````````
+
+.. code-block:: php
+    
+    $documentId = 42;
+    $result = $client->document->get($documentId);
+    
+    // store file
+    $filename = $result['name'];
+    $path = "/path/to/$filename";
+    file_put_contents($path, base64_decode($result['content']));
+
+
 `Back to top <#top>`_

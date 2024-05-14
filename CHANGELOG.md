@@ -48,3 +48,9 @@
 ## [1.0.11] - 2024-05-13
 
  - Added delete to folder endpoint
+
+## [1.0.12] - 2024-05-14
+
+ - Added download to document endpoint
+
+ 

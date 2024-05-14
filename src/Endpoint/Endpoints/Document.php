@@ -16,7 +16,9 @@ class Document extends AbstractEndpoint
      */
     public function list(int $folderId): ?array
     {
-        return $this->client->get("/document/$folderId");
+        return $this->client->get("/document", [
+            'folder_id' => $folderId
+        ]);
     }
     
     /**
@@ -42,5 +44,13 @@ class Document extends AbstractEndpoint
     public function delete(int $documentId): ?array
     {
         return $this->client->delete("/document/$documentId");
+    }
+    
+    /**
+     * @param int $documentId
+     */
+    public function get(int $documentId): ?array
+    {
+        return $this->client->get("/document/$documentId");
     }
 }

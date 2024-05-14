@@ -26,13 +26,13 @@ Create project
 .. code-block:: php
     
     $clientId = 42;
-    $name = 42;
+    $name = 'Project name';
     
     // optional
     $number = 42;
     $expires = (new DateTime())->modify('+30 days');
     
-    $result = $client->project->create($clientId, $number, $name, $expires);
+    $result = $client->project->create($clientId, $name, $number, $expires);
 
 
 Delete project

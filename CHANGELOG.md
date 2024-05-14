@@ -48,4 +48,3 @@
 ## [1.0.11] - 2024-05-13
 
  - Added delete to folder endpoint
- 
